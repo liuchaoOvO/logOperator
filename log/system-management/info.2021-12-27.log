@@ -1,0 +1,571 @@
+2021-12-27 11:43:33,246 - org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: hKKL0gVWQcGntE6Lta-OZg
+2021-12-27 11:44:43,651 - com.liuchao.mylog.MyLogApplication - Starting MyLogApplication using Java 1.8.0_292 on liuchao58deMacBook-Pro.local with PID 79936 (/Users/liuchao58/liuchao/IdeaWorkspace/my-log/target/classes started by liuchao58 in /Users/liuchao58/liuchao/IdeaWorkspace/my-log)
+2021-12-27 11:44:43,676 - com.liuchao.mylog.MyLogApplication - The following profiles are active: dev
+2021-12-27 11:44:44,135 - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-12-27 11:44:44,139 - org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 11:44:44,140 - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-12-27 11:44:44,140 - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-27 11:44:44,179 - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-12-27 11:44:44,179 - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 463 ms
+2021-12-27 11:44:44,214 - com.liuchao.mylog.init.InitKafkaConsumer - InitKafkaConsumer start...
+2021-12-27 11:44:44,214 - com.liuchao.mylog.init.InitKafkaConsumer - InitKafkaConsumer start success
+2021-12-27 11:44:44,395 - org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-12-27 11:44:44,403 - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-27 11:44:44,408 - com.liuchao.mylog.MyLogApplication - Started MyLogApplication in 81.912 seconds (JVM running for 88.142)
+2021-12-27 11:44:44,410 - com.liuchao.mylog.MyLogApplication - ----log info level :test hello world send to console----
+2021-12-27 11:44:45,229 - org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-12-27 11:44:45,268 - org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.7.1
+2021-12-27 11:44:45,268 - org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 61dbce85d0d41457
+2021-12-27 11:44:45,269 - org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1640576685268
+2021-12-27 11:44:45,270 - org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-test-1, groupId=test] Subscribed to topic(s): springbootLogInfo
+2021-12-27 11:44:45,306 - org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-test-1, groupId=test] Cluster ID: hKKL0gVWQcGntE6Lta-OZg
+2021-12-27 11:44:45,316 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2021-12-27 11:44:45,318 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] (Re-)joining group
+2021-12-27 11:44:45,394 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] (Re-)joining group
+2021-12-27 11:44:45,464 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Successfully joined group with generation Generation{generationId=130, memberId='consumer-test-1-bc4ea2a5-3608-4f07-b4e6-11a5be588bce', protocol='range'}
+2021-12-27 11:44:45,466 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Finished assignment for group at generation 130: {consumer-test-1-bc4ea2a5-3608-4f07-b4e6-11a5be588bce=Assignment(partitions=[springbootLogInfo-0])}
+2021-12-27 11:44:45,534 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Successfully synced group in generation Generation{generationId=130, memberId='consumer-test-1-bc4ea2a5-3608-4f07-b4e6-11a5be588bce', protocol='range'}
+2021-12-27 11:44:45,535 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Notifying assignor about the new Assignment(partitions=[springbootLogInfo-0])
+2021-12-27 11:44:45,537 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Adding newly assigned partitions: springbootLogInfo-0
+2021-12-27 11:44:45,585 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Setting offset for partition springbootLogInfo-0 to the committed offset FetchPosition{offset=131, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 0 rack: null)], epoch=0}}
+2021-12-27 11:46:14,819 - org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: hKKL0gVWQcGntE6Lta-OZg
+2021-12-27 11:47:19,918 - com.liuchao.mylog.MyLogApplication - Starting MyLogApplication using Java 1.8.0_292 on liuchao58deMacBook-Pro.local with PID 79996 (/Users/liuchao58/liuchao/IdeaWorkspace/my-log/target/classes started by liuchao58 in /Users/liuchao58/liuchao/IdeaWorkspace/my-log)
+2021-12-27 11:47:19,919 - com.liuchao.mylog.MyLogApplication - The following profiles are active: dev
+2021-12-27 11:47:20,339 - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-12-27 11:47:20,343 - org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 11:47:20,343 - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-12-27 11:47:20,343 - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-27 11:47:20,372 - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-12-27 11:47:20,372 - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 431 ms
+2021-12-27 11:47:20,408 - com.liuchao.mylog.init.InitKafkaConsumer - InitKafkaConsumer start...
+2021-12-27 11:47:20,408 - com.liuchao.mylog.init.InitKafkaConsumer - InitKafkaConsumer start success
+2021-12-27 11:47:20,596 - org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-12-27 11:47:20,607 - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-27 11:47:20,616 - com.liuchao.mylog.MyLogApplication - Started MyLogApplication in 76.365 seconds (JVM running for 81.952)
+2021-12-27 11:47:20,619 - com.liuchao.mylog.MyLogApplication - ----log info level :test hello world send to console----
+2021-12-27 11:47:21,416 - org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-12-27 11:47:21,430 - org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.7.1
+2021-12-27 11:47:21,430 - org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 61dbce85d0d41457
+2021-12-27 11:47:21,430 - org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1640576841430
+2021-12-27 11:47:21,431 - org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-test-1, groupId=test] Subscribed to topic(s): springbootLogInfo
+2021-12-27 11:47:21,445 - org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-test-1, groupId=test] Cluster ID: hKKL0gVWQcGntE6Lta-OZg
+2021-12-27 11:47:21,452 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2021-12-27 11:47:21,453 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] (Re-)joining group
+2021-12-27 11:47:21,465 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] (Re-)joining group
+2021-12-27 11:47:21,473 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Successfully joined group with generation Generation{generationId=132, memberId='consumer-test-1-4f1fd0d4-d3df-486f-ab7f-da9cab505074', protocol='range'}
+2021-12-27 11:47:21,474 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Finished assignment for group at generation 132: {consumer-test-1-4f1fd0d4-d3df-486f-ab7f-da9cab505074=Assignment(partitions=[springbootLogInfo-0])}
+2021-12-27 11:47:21,487 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Successfully synced group in generation Generation{generationId=132, memberId='consumer-test-1-4f1fd0d4-d3df-486f-ab7f-da9cab505074', protocol='range'}
+2021-12-27 11:47:21,487 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Notifying assignor about the new Assignment(partitions=[springbootLogInfo-0])
+2021-12-27 11:47:21,488 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Adding newly assigned partitions: springbootLogInfo-0
+2021-12-27 11:47:21,495 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Setting offset for partition springbootLogInfo-0 to the committed offset FetchPosition{offset=160, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 0 rack: null)], epoch=0}}
+2021-12-27 11:49:18,361 - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 11:49:18,361 - org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-12-27 11:49:18,362 - org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-12-27 11:49:25,927 - com.liuchao.mylog.controller.LogController - /api/v1/log--test send this log to kafka server....1640576958375
+2021-12-27 11:49:25,927 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response.isDisconnected: false. Rediscovery will be attempted.
+2021-12-27 11:49:25,957 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2021-12-27 11:49:25,960 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2021-12-27 11:49:25,960 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable.isDisconnected: false. Rediscovery will be attempted.
+2021-12-27 11:49:26,068 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2021-12-27 11:50:06,369 - com.liuchao.mylog.controller.LogController - /api/v1/log--test send this log to kafka server....1640577006369
+2021-12-27 14:07:40,891 - com.liuchao.mylog.MyLogApplication - Starting MyLogApplication using Java 1.8.0_292 on liuchao58deMacBook-Pro.local with PID 82355 (/Users/liuchao58/liuchao/IdeaWorkspace/my-log/target/classes started by liuchao58 in /Users/liuchao58/liuchao/IdeaWorkspace/my-log)
+2021-12-27 14:09:40,899 - com.liuchao.mylog.MyLogApplication - The following profiles are active: dev
+2021-12-27 14:16:34,394 - com.liuchao.mylog.MyLogApplication - Starting MyLogApplication using Java 1.8.0_292 on liuchao58deMacBook-Pro.local with PID 82862 (/Users/liuchao58/liuchao/IdeaWorkspace/my-log/target/classes started by liuchao58 in /Users/liuchao58/liuchao/IdeaWorkspace/my-log)
+2021-12-27 14:19:49,450 - com.liuchao.mylog.MyLogApplication - Starting MyLogApplication using Java 1.8.0_292 on liuchao58deMacBook-Pro.local with PID 82925 (/Users/liuchao58/liuchao/IdeaWorkspace/my-log/target/classes started by liuchao58 in /Users/liuchao58/liuchao/IdeaWorkspace/my-log)
+2021-12-27 14:22:02,185 - com.liuchao.mylog.MyLogApplication - The following profiles are active: dev
+2021-12-27 14:32:37,934 - org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: hKKL0gVWQcGntE6Lta-OZg
+2021-12-27 14:33:43,006 - com.liuchao.mylog.MyLogApplication - Starting MyLogApplication using Java 1.8.0_292 on liuchao58deMacBook-Pro.local with PID 83920 (/Users/liuchao58/liuchao/IdeaWorkspace/my-log/target/classes started by liuchao58 in /Users/liuchao58/liuchao/IdeaWorkspace/my-log)
+2021-12-27 14:33:43,010 - com.liuchao.mylog.MyLogApplication - The following profiles are active: dev
+2021-12-27 14:33:43,436 - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-12-27 14:33:43,441 - org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:33:43,441 - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-12-27 14:33:43,441 - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-27 14:33:43,478 - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-12-27 14:33:43,478 - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 419 ms
+2021-12-27 14:33:43,504 - com.liuchao.mylog.init.InitKafkaConsumer - InitKafkaConsumer start...
+2021-12-27 14:33:43,505 - com.liuchao.mylog.init.InitKafkaConsumer - InitKafkaConsumer start success
+2021-12-27 14:33:43,647 - org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:33:43,653 - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-27 14:33:43,661 - com.liuchao.mylog.MyLogApplication - Started MyLogApplication in 76.292 seconds (JVM running for 81.769)
+2021-12-27 14:33:43,662 - com.liuchao.mylog.MyLogApplication - ----log info level :test hello world send to console----
+2021-12-27 14:33:44,519 - org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-12-27 14:33:44,562 - org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.7.1
+2021-12-27 14:33:44,562 - org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 61dbce85d0d41457
+2021-12-27 14:33:44,563 - org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1640586824562
+2021-12-27 14:33:44,564 - org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-test-1, groupId=test] Subscribed to topic(s): springbootLogInfo
+2021-12-27 14:33:44,594 - org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-test-1, groupId=test] Cluster ID: hKKL0gVWQcGntE6Lta-OZg
+2021-12-27 14:33:44,601 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2021-12-27 14:33:44,604 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] (Re-)joining group
+2021-12-27 14:33:44,648 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] (Re-)joining group
+2021-12-27 14:33:44,675 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Successfully joined group with generation Generation{generationId=134, memberId='consumer-test-1-c63588b3-0351-4395-8f47-a1027f5045c8', protocol='range'}
+2021-12-27 14:33:44,676 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Finished assignment for group at generation 134: {consumer-test-1-c63588b3-0351-4395-8f47-a1027f5045c8=Assignment(partitions=[springbootLogInfo-0])}
+2021-12-27 14:33:44,757 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Successfully synced group in generation Generation{generationId=134, memberId='consumer-test-1-c63588b3-0351-4395-8f47-a1027f5045c8', protocol='range'}
+2021-12-27 14:33:44,757 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Notifying assignor about the new Assignment(partitions=[springbootLogInfo-0])
+2021-12-27 14:33:44,761 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Adding newly assigned partitions: springbootLogInfo-0
+2021-12-27 14:33:44,797 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Setting offset for partition springbootLogInfo-0 to the committed offset FetchPosition{offset=202, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 0 rack: null)], epoch=0}}
+2021-12-27 14:35:37,181 - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 14:35:37,182 - org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-12-27 14:35:37,183 - org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-12-27 14:35:37,194 - com.liuchao.mylog.controller.LogController - /api/v1/log--test send this log to kafka server....1640586937194
+2021-12-27 14:36:04,933 - com.liuchao.mylog.controller.LogController - /api/v1/log--test send this log to kafka server....1640586964933
+2021-12-27 14:41:37,711 - org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: hKKL0gVWQcGntE6Lta-OZg
+2021-12-27 14:49:22,277 - org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: hKKL0gVWQcGntE6Lta-OZg
+2021-12-27 14:50:27,353 - com.liuchao.mylog.MyLogApplication - Starting MyLogApplication using Java 1.8.0_292 on liuchao58deMacBook-Pro.local with PID 84323 (/Users/liuchao58/liuchao/IdeaWorkspace/my-log/target/classes started by liuchao58 in /Users/liuchao58/liuchao/IdeaWorkspace/my-log)
+2021-12-27 14:50:27,358 - com.liuchao.mylog.MyLogApplication - The following profiles are active: dev
+2021-12-27 14:50:27,766 - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-12-27 14:50:27,810 - org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:50:27,811 - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-12-27 14:50:27,811 - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-27 14:50:27,851 - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-12-27 14:50:27,851 - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 447 ms
+2021-12-27 14:50:27,875 - com.liuchao.mylog.init.InitKafkaConsumer - InitKafkaConsumer start...
+2021-12-27 14:50:27,876 - com.liuchao.mylog.init.InitKafkaConsumer - InitKafkaConsumer start success
+2021-12-27 14:50:28,003 - org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:50:28,009 - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-27 14:50:28,014 - com.liuchao.mylog.MyLogApplication - Started MyLogApplication in 76.295 seconds (JVM running for 81.725)
+2021-12-27 14:50:28,015 - com.liuchao.mylog.MyLogApplication - ----log info level :test hello world send to console----
+2021-12-27 14:50:28,889 - org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-12-27 14:50:28,915 - org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.7.1
+2021-12-27 14:50:28,916 - org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 61dbce85d0d41457
+2021-12-27 14:50:28,916 - org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1640587828915
+2021-12-27 14:50:28,918 - org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-test-1, groupId=test] Subscribed to topic(s): springbootLogInfo
+2021-12-27 14:50:28,943 - org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-test-1, groupId=test] Cluster ID: hKKL0gVWQcGntE6Lta-OZg
+2021-12-27 14:50:28,944 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2021-12-27 14:50:28,946 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] (Re-)joining group
+2021-12-27 14:50:28,966 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] (Re-)joining group
+2021-12-27 14:50:28,979 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Successfully joined group with generation Generation{generationId=136, memberId='consumer-test-1-6fda8221-9a89-4067-9a92-a1f385e7ed93', protocol='range'}
+2021-12-27 14:50:28,981 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Finished assignment for group at generation 136: {consumer-test-1-6fda8221-9a89-4067-9a92-a1f385e7ed93=Assignment(partitions=[springbootLogInfo-0])}
+2021-12-27 14:50:28,995 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Successfully synced group in generation Generation{generationId=136, memberId='consumer-test-1-6fda8221-9a89-4067-9a92-a1f385e7ed93', protocol='range'}
+2021-12-27 14:50:28,995 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Notifying assignor about the new Assignment(partitions=[springbootLogInfo-0])
+2021-12-27 14:50:28,997 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Adding newly assigned partitions: springbootLogInfo-0
+2021-12-27 14:50:29,007 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Setting offset for partition springbootLogInfo-0 to the committed offset FetchPosition{offset=239, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 0 rack: null)], epoch=0}}
+2021-12-27 14:52:38,624 - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 14:52:38,624 - org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-12-27 14:52:38,625 - org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2021-12-27 14:52:38,637 - com.liuchao.mylog.controller.LogController - /api/v1/log--test send this log to kafka server....1640587958637
+2021-12-27 14:53:55,151 - org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: hKKL0gVWQcGntE6Lta-OZg
+2021-12-27 14:56:24,949 - org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: hKKL0gVWQcGntE6Lta-OZg
+2021-12-27 14:57:30,007 - com.liuchao.mylog.MyLogApplication - Starting MyLogApplication using Java 1.8.0_292 on liuchao58deMacBook-Pro.local with PID 84471 (/Users/liuchao58/liuchao/IdeaWorkspace/my-log/target/classes started by liuchao58 in /Users/liuchao58/liuchao/IdeaWorkspace/my-log)
+2021-12-27 14:57:30,011 - com.liuchao.mylog.MyLogApplication - The following profiles are active: dev
+2021-12-27 14:57:30,446 - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-12-27 14:57:30,451 - org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:57:30,451 - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-12-27 14:57:30,451 - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-27 14:57:30,491 - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-12-27 14:57:30,491 - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 432 ms
+2021-12-27 14:57:30,513 - com.liuchao.mylog.init.InitKafkaConsumer - InitKafkaConsumer start...
+2021-12-27 14:57:30,514 - com.liuchao.mylog.init.InitKafkaConsumer - InitKafkaConsumer start success
+2021-12-27 14:57:30,638 - org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:57:30,643 - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-27 14:57:30,649 - com.liuchao.mylog.MyLogApplication - Started MyLogApplication in 76.175 seconds (JVM running for 81.68)
+2021-12-27 14:57:30,650 - com.liuchao.mylog.MyLogApplication - ----log info level :test hello world send to console----
+2021-12-27 14:57:31,534 - org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-12-27 14:57:31,571 - org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.7.1
+2021-12-27 14:57:31,572 - org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 61dbce85d0d41457
+2021-12-27 14:57:31,572 - org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1640588251571
+2021-12-27 14:57:31,573 - org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-test-1, groupId=test] Subscribed to topic(s): springbootLogInfo
+2021-12-27 14:57:31,581 - org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-test-1, groupId=test] Cluster ID: hKKL0gVWQcGntE6Lta-OZg
+2021-12-27 14:57:31,584 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2021-12-27 14:57:31,592 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] (Re-)joining group
+2021-12-27 14:57:31,603 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] (Re-)joining group
+2021-12-27 14:57:31,613 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Successfully joined group with generation Generation{generationId=138, memberId='consumer-test-1-823dcc32-618d-4894-8e0c-49f593bb0bf7', protocol='range'}
+2021-12-27 14:57:31,615 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Finished assignment for group at generation 138: {consumer-test-1-823dcc32-618d-4894-8e0c-49f593bb0bf7=Assignment(partitions=[springbootLogInfo-0])}
+2021-12-27 14:57:31,645 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Successfully synced group in generation Generation{generationId=138, memberId='consumer-test-1-823dcc32-618d-4894-8e0c-49f593bb0bf7', protocol='range'}
+2021-12-27 14:57:31,645 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Notifying assignor about the new Assignment(partitions=[springbootLogInfo-0])
+2021-12-27 14:57:31,647 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Adding newly assigned partitions: springbootLogInfo-0
+2021-12-27 14:57:31,655 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-test-1, groupId=test] Setting offset for partition springbootLogInfo-0 to the committed offset FetchPosition{offset=274, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 0 rack: null)], epoch=0}}
+2021-12-27 14:58:47,001 - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 14:58:47,001 - org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-12-27 14:58:47,002 - org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-12-27 14:58:47,016 - com.liuchao.mylog.controller.LogController - /api/v1/log--test send this log to kafka server....1640588327016
+2021-12-27 14:59:47,861 - com.liuchao.mylog.controller.LogController - /api/v1/log--test send this log to kafka server....1640588387861
