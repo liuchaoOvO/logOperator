@@ -15,3 +15,6 @@ git push -u origin master\
 /kafka-topics.sh --delete --topic springbootLogInfo   --bootstrap-server 127.0.0.1:9092\
 6.启动一个测试消费者 用于消费topic：springbootLogInfo的消息。即消费该logOperator服务采集的日志\
 ./kafka-console-consumer.sh  --bootstrap-server 127.0.0.1:9092 --topic  springbootLogInfo
+7.查看kafka 磁盘持久化文件使用情况\
+cd /tmp/kafka-logs\
+du -H -h\
