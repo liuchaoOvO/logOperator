@@ -1,7 +1,7 @@
 # git 
 git clone https://github.com/liuchaoOvO/logOperator.git \
 git remote set-url origin https://github.com/liuchaoOvO/logOperator.git \
-git push -u origin master\
+git push -u origin master
 
 # logOperator
 步骤\
