@@ -24,7 +24,8 @@
     <property name="isSend" value="true"/>
     <!--配置日志输出格式-->
     <!--   简单配置项    将日志输出到控制台-->
-    <appender name="consoleLog" class="ch.qos.logback.core.ConsoleAppender"><!--ConsoleAppender,这个Appender将日志输出到console，更准确的说是System.out 或者System.err。-->
+    <appender name="consoleLog"
+              class="ch.qos.logback.core.ConsoleAppender"><!--ConsoleAppender,这个Appender将日志输出到console，更准确的说是System.out 或者System.err。-->
         <!--<filter class="ch.qos.logback.classic.filter.LevelFilter">
             &lt;!&ndash;由于error的级别比info高,直接过滤不行,这里需要拦截掉error日志&ndash;&gt;
             <level>INFO</level>                     &lt;!&ndash;设置拦截的对象为INFO级别日志&ndash;&gt;
@@ -36,7 +37,8 @@
             <pattern>
                 {
                 "timestamp":"%date{yyyy-MM-dd HH:mm:ss.SSS}",
-                "app": "${appname}","thread": "%thread", "logLevel-": "%level", "request_id:": [%X{request_id}] , "message": "%message","logger":"%logger"
+                "app": "${appname}","thread": "%thread", "logLevel-": "%level", "request_id:": [%X{request_id}] ,
+                "message": "%message","logger":"%logger"
                 }\n
             </pattern>
             <!-- 控制台也要使用UTF-8，不要使用GBK，否则会中文乱码 -->
@@ -130,7 +132,8 @@
             <pattern>
                 {
                 "timestamp":"%date{yyyy-MM-dd HH:mm:ss.SSS}",
-                "app": "${appname}","thread": "%thread", "logLevel---": "%level","request_id:": [%X{request_id}] , "message": "%message","logger":"%logger"
+                "app": "${appname}","thread": "%thread", "logLevel---": "%level","request_id:": [%X{request_id}] ,
+                "message": "%message","logger":"%logger"
                 }\n
             </pattern>
             <!-- 控制台也要使用UTF-8，不要使用GBK，否则会中文乱码 -->
@@ -165,6 +168,11 @@
         <appender-ref ref="KAFKA"/>
     </root>
     -->
+    <!-- 异步输出 日志文件方式, 如需要启用 使用<appender-ref ref="AsyncConsoleLog"/> 即可-->
+    <appender name="AsyncConsoleLog" class="ch.qos.logback.classic.AsyncAppender">
+        <!-- 添加附加的appender,最多只能添加一个 -->
+        <appender-ref ref="consoleLog"/>
+    </appender>
     <root level="INFO">                               <!--就是说在整个项目中,日志级别在info以上的日志都打印-->
         <appender-ref ref="fileInfoLog"/>
         <appender-ref ref="fileErrorLog"/>
