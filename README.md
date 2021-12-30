@@ -1,3 +1,8 @@
+# git 
+git clone https://github.com/liuchaoOvO/logOperator.git \
+git remote set-url origin https://github.com/liuchaoOvO/logOperator.git \
+git push -u origin master\
+
 # logOperator
 步骤\
 1.下载安装Kafka 参考blog：https://blog.csdn.net/CoderTnT/article/details/121145500 \
