@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.liuchao</groupId>
-    <artifactId>my-log</artifactId>
+    <artifactId>logOperator</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>my-log</name>
+    <name>logOperator</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
@@ -23,12 +23,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-           <!-- <exclusions>
-                <exclusion>
-                    <artifactId>spring-boot-starter-logging</artifactId>
-                    <groupId>org.springframework.boot</groupId>
-                </exclusion>
-            </exclusions>-->
+            <!-- <exclusions>
+                 <exclusion>
+                     <artifactId>spring-boot-starter-logging</artifactId>
+                     <groupId>org.springframework.boot</groupId>
+                 </exclusion>
+             </exclusions>-->
         </dependency>
 
         <dependency>
